@@ -1,18 +1,18 @@
 // @ts-check
-const {themes} = require('prism-react-renderer');
+const { themes } = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'IT知识学习网站',
   tagline: '编程教程学习平台',
   favicon: 'img/favicon.ico',
-  
+
   url: 'https://your-domain.com',
   // baseUrl  需要改成你的仓库名，如果你启用了GitHub Pages，请改成你的仓库名,默认是/
   baseUrl: 'saodoc2',
-  
+
   onBrokenLinks: 'throw',
-  
+
   i18n: {
     defaultLocale: 'zh-CN',
     locales: ['zh-CN'],
@@ -46,30 +46,83 @@ const config = {
         items: [
           {
             to: '/docs/javascript/intro',
-            label: 'JavaScript教程',
+            label: 'JavaScript',
+            position: 'left',
+          },    
+          {
+            to: '/docs/node/node1',
+            label: 'node',
             position: 'left',
           },
           {
-            to: '/docs/python/intro',
-            label: 'Pythont教程',
+            to: '/docs/docusaurus/1',
+            label: 'Docusaurus',
             position: 'left',
           },
           {
-            href: 'https://github.com/your-repo',
+            to: '/docs/其他/0',
+            label: '其他',
+            position: 'left',
+          },
+          // 类型3：下拉菜单
+          {
+            type: 'dropdown',
+            label: '更多',
+            position: 'left',
+            items: [
+              {
+                label: 'JavaScript',
+                to: '/docs/javascript/intro',
+              },
+              {
+                label: 'Python',
+                to: '/docs/python/intro',
+              },
+              {
+                label: 'Java',
+                to: '/docs/java/intro',
+              },
+
+            ],
+          },
+          //右边链接
+          // 类型6：搜索框
+          {
+            type: 'search',
+            position: 'right',
+          },
+
+          // 类型7：语言切换
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/wxhzhwxhzh',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
-      
+
       footer: {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} IT知识学习网站`,
       },
-      
+
       prism: {
         theme: themes.github,
         darkTheme: themes.nightOwl,
+      },
+
+      // ---------- 公告栏 ----------
+      announcementBar: {
+        id: 'support_us',
+        content:
+          '⭐️ 如果你喜欢这个网站，请在 <a target="_blank" rel="noopener noreferrer" href="https://github.com/wxhzhwxhzh">GitHub</a> 给我们一个 Star！',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
       },
     }),
 };

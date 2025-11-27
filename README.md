@@ -433,6 +433,8 @@ npm install --save @docusaurus/plugin-ideal-image
 # 代码块功能增强
 npm install --save @docusaurus/theme-live-codeblock
 ```
+## 13. 更新
+> 每次更新新的文档，只需要改动 侧边栏（sidebars.js）和导航栏(docusaurus.config.js)的配置
 
 现在你就可以：
 1. 在 `docs/` 目录下添加 `.md` 文件

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /intro
 ---
 
 # 教程介绍
