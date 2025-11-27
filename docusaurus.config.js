@@ -10,8 +10,8 @@ const config = {
   url: 'https://your-domain.com',
   // baseUrl  需要改成你的仓库名，如果你启用了GitHub Pages，请改成你的仓库名,默认是/
   baseUrl: 'saodoc2',
-
-  onBrokenLinks: 'throw',
+  // 对于死链接，默认是warn，可以改成其他的选项，比如ignore,throw
+  onBrokenLinks: 'warn',
 
   i18n: {
     defaultLocale: 'zh-CN',
