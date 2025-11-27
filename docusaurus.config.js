@@ -18,6 +18,18 @@ const config = {
     locales: ['zh-CN'],
   },
 
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en", "zh"], // 支持中英文
+        indexBlog: true, // 是否索引博客
+        indexDocs: true,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -48,7 +60,7 @@ const config = {
             to: '/docs/javascript/intro',
             label: 'JavaScript',
             position: 'left',
-          },    
+          },
           {
             to: '/docs/node/node1',
             label: 'node',
@@ -79,8 +91,8 @@ const config = {
                 to: '/docs/python/intro',
               },
               {
-                label: 'Java',
-                to: '/docs/java/intro',
+                label: 'AIChatOS',
+                href: 'https://cht18.aichatosclx.com/',
               },
 
             ],
@@ -114,6 +126,11 @@ const config = {
         theme: themes.github,
         darkTheme: themes.nightOwl,
       },
+      // -----------插件----------
+      plugins: [
+        '@docusaurus/plugin-search',
+        // 其他插件...
+      ],
 
       // ---------- 公告栏 ----------
       announcementBar: {
