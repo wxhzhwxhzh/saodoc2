@@ -73,7 +73,7 @@ const config = {
           },
           {
             to: '/docs/其他/0',
-            label: '其他',
+            label: '📘文档',
             position: 'left',
           },
           // 类型3：下拉菜单
