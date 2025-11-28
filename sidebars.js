@@ -17,8 +17,9 @@ const sidebars = {
       label: 'JavaScript教程',
       items: [
         'javascript/intro',
-        'javascript/basic-syntax',
+        'javascript/syntax',
         'javascript/dom',
+        'javascript/module',
       ],
     },
   ],
