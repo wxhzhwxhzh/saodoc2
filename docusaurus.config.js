@@ -72,7 +72,7 @@ const config = {
             position: 'left',
           },
           {
-            to: '/docs/其他/0',
+            to: '/docs/其他/other',
             label: '📘文档',
             position: 'left',
           },

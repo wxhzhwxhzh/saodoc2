@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-
-id: start
+title: 其他
+id: other
 ---
 
 # 教程介绍
